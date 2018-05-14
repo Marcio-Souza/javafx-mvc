@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLvbMainController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem fx:id="mniCadastrosClientes" mnemonicParsing="false" onAction="#handleMniCadastroClientes" text="Clientes" />
+                  <MenuItem fx:id="mniCadastrosProdutos" mnemonicParsing="false" onAction="#handleMniCadastroProdutos" text="Produtos" />
+                  <MenuItem fx:id="mniCadastrosCategorias" mnemonicParsing="false" onAction="#handleMniCadatroCaterorias" text="Categorias" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Processos">
+            <items>
+              <MenuItem fx:id="mniProcessosVendas" mnemonicParsing="false" onAction="#handleMniProcessoVendas" text="Vendas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Graficos">
+            <items>
+              <MenuItem fx:id="mniGraficosVendas" mnemonicParsing="false" text="Vendas por mês" />
+            </items>
+          </Menu>
+            <Menu fx:id="mniRelatoriosEstoque" mnemonicParsing="false" text="Relatórios">
+              <items>
+                <MenuItem fx:id="mniRelatoriosEstoque" mnemonicParsing="false" text="Produtos em estoque" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" prefHeight="377.0" prefWidth="600.0" />
+   </children>
+</VBox>
